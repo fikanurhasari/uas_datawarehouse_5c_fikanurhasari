@@ -1,0 +1,23 @@
+body{
+    font-family: sans-serif;
+    background:  #e5ff00;
+    text-align: center;
+}
+.background{
+    background-image:url("img/shop.png");
+  }
+  
+#logo{
+    width: 100%;
+    margin:auto;
+    padding:auto;
+    padding-bottom: 20px;
+}
+
+#container{
+    width: 360px;
+    background: rgb(227, 231, 0);
+    margin:180px auto;
+    padding: 30px 20px;
+    border-radius: 6px;
+}

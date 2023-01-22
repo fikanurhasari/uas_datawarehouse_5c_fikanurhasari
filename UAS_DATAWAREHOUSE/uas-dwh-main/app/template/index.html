@@ -1,0 +1,26 @@
+{% extends 'base.html' %} 
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+<div><h1></h1></div>
+<div><h1></h1></div>
+<div><h1></h1></div>
+<div class="container">
+  <div style="background: #906aab; text-decoration-color: aliceblue; background-image: 'img/shop.png' ; padding: 100px ">
+  <form action="/prediksi" method="post">
+    <div class="mt-xl-5 text-center align-self-center">
+      <h4 class="text-white">PREDIKSI PENJUALAN</h4>
+      <label for="formGroupExampleInput" class="form-label"></label>
+      <input
+        type="text"
+        name="tahun"
+        class="form-control w-50 mx-auto text-center"
+        id="formGroupExampleInput"
+        placeholder="Masukan tahun keberapa untuk prediksi hasil total penjualan"
+      />
+      <button type="submit" class="btn btn-primary mt-3">Prediksi</button>
+      <p style="font-size: 1.2em; margin-top: 10px">{{ prediction_text }}</p>
+    </div>
+  </form>
+</div>
+</div>
+{%endblock%}
